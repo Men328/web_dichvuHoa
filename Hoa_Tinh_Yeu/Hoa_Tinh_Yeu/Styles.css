@@ -1,0 +1,103 @@
+body{
+    background: lavender;
+}
+  .page{
+    width: 80%;
+    position: relative;
+    margin: auto;
+    background-color: white; 
+    }
+  .header {
+    background-image: url(image/hoa8.jpg);
+    background-size: cover;
+    color: white;
+    font-family:'Brush Script MT', cursive;
+    padding: 5px;
+    height:140px;
+    text-shadow: 2px 2px 4px #000000;
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}  
+
+.header > div:first-child {
+    text-align: left;
+    width: 50%;
+}
+
+.header > div:last-child {
+    text-align: right;
+    width: 50%;
+}
+
+.option {
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-size:25px;
+    /* margin: 20px; */
+    padding: 5px;
+    height:120px;
+    background-color: lavender;
+    display: flex;
+}
+ .right {
+        position: absolute;
+        right: 0;
+        width: 25%;
+        height: 500px;
+        margin-top: 50px;
+        display: flex; 
+        flex-direction: column; 
+        align-items: center;    
+        background-color: lavender;
+} 
+.menu a {
+    text-decoration: none;
+    color: #9933FF;
+} 
+.menu a:hover{
+    font-weight: bold;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    position: absolute;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    width: 65%;
+    height: 80%;
+    margin-top: 150px;
+} 
+
+.item {
+    height: 200px;
+    background-color: #ccc;
+    text-align: center;
+}   
+
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+name {
+    text-align: center;
+    margin: 0;
+}
+
+flowerName {
+    font-size: 14px;
+    color:#6666FF;
+    margin-top: 5px;
+}
+
+a[href*="url LS"] {
+    text-decoration: none;
+  }
