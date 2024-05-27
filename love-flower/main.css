@@ -1,0 +1,139 @@
+.main-body {
+    display: flex;
+    flex-direction: column;
+    height: 10000px;
+    width: 100%;
+    position: relative;
+    overflow-y: auto;
+}
+.head {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 70px;
+    z-index: 1;
+    background-color: white;
+
+}
+
+.body1 {
+    height: 700px;
+    margin: 0px;
+    background-image: url('pictures/background.jpg');
+    background-size: cover;
+}
+
+.body2 {
+    width: 100%;
+    height: 150px;
+    position: relative;
+}
+
+.bb2 {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    z-index: 2;
+    width: 300px;
+    height: 100px;
+    font-size: 14px;
+    font-family: Courier;
+    color: #0e5e0e;
+}
+.body3{
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.cenb3 {
+    width: 75%;
+    height: 600px;
+    background-color: wheat;
+    background-image: url('pictures/cenB3.jpg');
+    background-size: cover;
+}
+.leftB3{
+    width: 4%;
+    height: 600px;
+    background-color:white;
+    position: fixed;
+    left:0;
+    top:0;
+    z-index: 3;
+    display: flex;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    justify-content: center;
+    align-items: center;
+}
+.leftB3 p{
+    margin: 0;
+}
+.bottom_right_b3{
+   position: absolute;
+   right: 80px;;
+   bottom: -350px;
+   height: 400px;
+   width: 700px;
+   background-size: cover;
+}
+.bottom_right_b3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.body4{
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 250px;
+}
+.headB4 {
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    height: 200px;
+    color: #0e5e0e;
+    font-size: 30px;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Tahoma;
+}
+.cenb4 {
+    width: 90%;
+    height: 900px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: absolute;
+    top: 250px;
+    left: 80px;
+}
+.item {
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    text-align: center;
+}   
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+name {
+    text-align: center;
+    margin: 0;
+    font-size: 25px;
+    color: #0e5e0e;
+}
+name a {
+    text-decoration: none;
+    color: #0e5e0e;
+}
