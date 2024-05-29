@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tiem Hoa Cua Tam Nhim</title>
+    <title>Tiệm Hoa Tam Nhím</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="shortcut icon" type="image/png" href="images/connhim.png"/>
@@ -15,16 +15,16 @@
         header {
             background-color: #FFCCCC;
             color: #fff;
-            padding: 20px 0;
-            text-align: center;
-            
+            width: 100%;
+            height: 100px;   
             
         }
 
         .header-content {
             display: flex;
             justify-content: space-between;
-            align-items: center;
+         
+            position: relative;
         }
 
         nav ul {
@@ -116,7 +116,7 @@
 
 .banner { 
     width: 100%;
-    height: 900px; 
+    height: 600px; 
     background-image: url('https://cdn.pixabay.com/photo/2018/08/31/13/21/flowers-3644676_960_720.jpg'); 
     background-size: cover; 
     background-repeat: no-repeat; 
@@ -167,7 +167,7 @@ margin-top: 150px;
     .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 25px;
             font-size: 40px;
             
         }
@@ -188,9 +188,24 @@ margin-top: 150px;
         }
 
         .logo img {
-            width: 100px;
+            width: auto;
             height: auto;
         }
+        .blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.blur {
+        font-size: 40px;
+        text-shadow: rgb(240, 240, 32) -1px -2px 0.5em;
+    }
+
 
 </style>
 </head>
@@ -199,22 +214,27 @@ margin-top: 150px;
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <img src="images/connhim.png" alt="">
+                    <img src="images/logo2.png" alt="">
                 </div>
-                <nav>
-                    <ul>
-                        <li><a href="#">Trang chủ</a></li>
-                        <li><a href="#">Sản phẩm</a></li>
-                        <li><a href="#">Dịch vụ</a></li>
-                        <li><a href="#">Liên hệ</a></li>
-                    </ul>
-                </nav>
+                <div>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Trang chủ</a></li>
+                            <li><a href="#">Sản phẩm</a></li>
+                            <li><a href="#">Thông điệp</a></li>
+                            <li><a href="formdien.html">Liên hệ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div>
+                    <p>hehe</p>
+                </div>
             </div>
         </div>
     </header>
     <div class="banner">
       <button style="background-color: #F7921E; color: #fff; outline: none; border: none; padding: 10px 20px; border-radius: 10px; font-size: 20px;">FLOWERS SHOP</button>
-      <h1 style="font-size: 80px; width: 60%;">Tiệm Hoa Tam Nhím</h1>
+      <h1 class="blur blink_me", style="font-size: 80px; width: 60%;">Tiệm Hoa Tam Nhím</h1>
     </div>
     
 </body>
@@ -224,19 +244,19 @@ margin-top: 150px;
         <h2 style="font-weight: bold; font-size: 25px;">LUÔN ĐƯỢC TIỆM CẬP NHẬT LIÊN TỤC</h2>
         <div class="tiemhoa">
             <div class="tiemhoa-res">
-              <a href="love-flower/love_2.html"><img style="border-radius: 30px;width: 400px;" src="https://cf.shopee.vn/file/ce71787b2c68759421650daaa096859c" alt=""></a>
+              <a href="love-flower/love_2.html"><img style="border-radius: 30px;width: 400px;" src="images/hoatinhyeu.jpg" alt=""></a>
               <p class="tiemhoa-pos" style="font-size: 30px; text-align: center;">HOA TÌNH YÊU</p>
             </div>
             <div class="tiemhoa-res">
-                <img style="border-radius: 30px;width: 470px;" src="https://guitanghoa.com/wp-content/uploads/2018/09/bo-hoa-dep.jpg" alt="">
+                <img style="border-radius: 30px;width: 470px;" src="images/hoachucmung.jpg" alt="">
                 <p class="tiemhoa-pos" style="font-size: 30px; text-align: center;">HOA CHÚC MỪNG</p>
              </div>
              <div class="tiemhoa-res">
-               <a href="Tấu/KeHoaChiaBuon.html"><img style="border-radius: 40px;width: 288px;" src="https://i.pinimg.com/236x/a8/88/4e/a8884ed137fba021fd23ef608a76827a.jpg" alt=""></a>
+               <a href="Tấu/KeHoaChiaBuon.html"><img style="border-radius: 40px;width: 288px;" src="images/kechiabuon.jpg" alt=""></a>
                 <p class="tiemhoa-pos" style="font-size: 30px; text-align: center;">KỆ CHIA BUỒN</p>
              </div>
 	<div class="tiemhoa-res">
-               <a href = "Tấu/KeHoaKhaiTruong.html"><img style="border-radius: 50px;width: 245px;" src="https://hoatuoiquan7.com/upload/sanpham/ke-hoa-chuc-mung-khai-truong-mau-hong-7671.png" alt=""></a>
+               <a href = "Tấu/KeHoaKhaiTruong.html"><img style="border-radius: 50px;width: 245px;" src="images/kekhaitruong.png" alt=""></a>
                 <p class="tiemhoa-pos" style="font-size: 30px; text-align: center;">KỆ KHAI TRƯƠNG</p>
              </div>
         </div>
