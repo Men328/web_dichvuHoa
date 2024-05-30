@@ -3,8 +3,8 @@
     margin: 0;
 }
 header {
-    background-color: #e396c6;
-    color: #fff;
+    background-color: #eed1e3;
+    color: #000000;
     width: 100%;
     height: 100px;  
     position: fixed;
@@ -126,7 +126,7 @@ footer {
     flex-direction: column;
     justify-content: center; 
     align-items: center; 
-    margin-top: 50px;
+    margin-top: 100px;
 }
 /* Định kiểu cho phần container */
 .container {
@@ -168,8 +168,8 @@ footer {
 
 
 .container .section img {
-    width: 80%;
-    height: auto; 
+    width: 200px;
+    height: 200px; 
     border-radius: 10px; 
     max-width: 200px; /* Đặt chiều rộng tối đa của div là 200px */
     max-height: 200px; /* Đặt chiều cao tối đa của div là 200px */
@@ -207,6 +207,42 @@ footer {
     width: 100%;
     height: auto;
     background-color: rgba(255, 189, 127, .4);
+}
+
+.div4 {
+    margin-top: 150px;
+    padding-top: 200px;
+    padding-bottom: 10px;
+    padding-left: 200px;
+    padding-right: 100px;
+    width: 100%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.367);
+    flex: 1; /* Mỗi box sẽ chiếm phần bằng nhau của container */
+    margin: 0 10px;
+    text-align: center;
+    font-size: 20px;
+    justify-content: center; /* Căn giữa nội dung theo chiều ngang */
+    align-items: center;
+    vertical-align: middle;
+}
+
+.div5 {
+    margin-top: 150px;
+    padding-top: 400px;
+    padding-bottom: 10px;
+    padding-left: 200px;
+    padding-right: 200px;
+    width: 100%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.367);
+    flex: 1; /* Mỗi box sẽ chiếm phần bằng nhau của container */
+    margin: 0 10px;
+    text-align: center;
+    font-size: 20px;
+    justify-content: center; /* Căn giữa nội dung theo chiều ngang */
+    align-items: center;
+    vertical-align: middle;
 }
 
 .container {
@@ -268,7 +304,7 @@ position: relative;
 
 }
 #main-menu li a{
-color: #f8f8f8;
+color: #000000;
 display: block;
 padding: 18px 20px;
 text-decoration: none;
@@ -303,3 +339,18 @@ border: none;
 #main-menu ul li:hover a{
 color: #df2a2a;
 }
+/*hieu ung anh di chuyen qua lai*/
+.image-container {
+    overflow: hidden; /* Đảm bảo chỉ có phần ảnh hiển thị trong phần tử cha */
+    position: relative; /* Thiết lập vị trí tương đối để di chuyển ảnh */
+  }
+  
+  .image-container img {
+    transition: transform 0.8s ease; /* Tạo hiệu ứng di chuyển mượt mà */
+  }
+  
+  .image-container:hover img {
+    transform: translateX(-20px); /* Di chuyển ảnh sang trái khi di chuột qua */
+  }
+
+  
