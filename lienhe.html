@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên Hệ</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="lienhe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="shortcut icon" type="image/png" href="images/connhim.png"/>
+</head>
+<body>
+    <header id="stickyHeader">
+    <div class="container">
+        <div class="header-content">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo2.png" alt=""></a>
+            </div>
+            <div>
+                <nav>
+                    <ul id="main-menu">
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="#">Sản phẩm</a>
+                            <ul class="sub-menu">
+                                <li><a href="love-flower/love_2.html">Hoa tình yêu</a></li>
+                                <li><a href="#">Hoa chúc mừng</a></li>
+                                <li><a href="Tấu/KeHoaKhaiTruong.html">Kệ hoa khai trương</a></li>
+                                <li><a href="Tấu/KeHoaChiaBuon.html">Kệ hoa chia buồn</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="ynghia.html">Ý nghĩa</a></li>
+                        <li><a href="lienhe.html">Liên hệ</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <p><i class="fas fa-bag"></i></p>
+            </div>
+        </div>
+    </div>
+    </header>
+    <form action="#" method="POST">
+        <label for="name">Họ và Tên:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Số Điện Thoại:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]+" title="Vui lòng nhập số" required>
+
+        <label for="message">Lời Nhắn:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <input type="submit" value="Gửi">
+    </form>
+</div>
+</body>
+</html>
