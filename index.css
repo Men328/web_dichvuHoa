@@ -3,7 +3,7 @@ body {
     padding: 0;
     margin: 0;
 }
-
+/*HEADERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR*/
 header {
     background-color: #eed1e3;
     color: #000000;
@@ -43,253 +43,6 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/*footer*/
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    box-sizing: border-box;
-}
-
-.div1, .div2, .div3 {
-    text-align: left;
-    width: 100%;
-    height: 100%;
-    vertical-align: middle;
-}
-
-.div6 {
-    text-align: left; 
-    width: 100%;
-    height: 100%;
-    background-color: white;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
-    margin-top: 20px;
-}
-
-.grid-item {
-    background-color: #fff;
-    padding-top: 100%; /* Tạo ô vuông */
-    position: relative;
-    border: 1px solid #ddd;
-    overflow: hidden;
-}
-
-.grid-item:hover {
-    cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 999;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.modal-content {
-    margin: auto;
-    display: block;
-    max-width: 80%;
-    max-height: 80%;
-}
-
-.close {
-    color: #fff;
-    font-size: 30px;
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    cursor: pointer;
-}
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-}
-
-.header-center p{
-    margin: 0 15px;
-    font-size: 20px;
-}
-
-.banner { 
-    width: 100%;
-    height: 500px;
-    
-    background-image: url('images/biahoa.jpg'); 
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    display: flex; 
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
-    color: white; 
-    font-size: 24px; 
-    text-align: center; 
-}
-
-.content{
-    display: flex; 
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
-    margin-top: 100px;
-}
-/* Định kiểu cho phần container */
-.container {
-    display: flex; /* Sử dụng flexbox để sắp xếp các phần tử con */
-    justify-content: space-around; /* Sắp xếp đều các phần tử trong container */
-    align-items: center; /* Căn giữa các phần tử theo chiều dọc */
-    gap: 20px; /* Khoảng cách giữa các phần tử con */
-    padding: 20px; /* Khoảng cách giữa container và các phần tử con */
-}
-
-/* Định kiểu cho các nút trong container */
-.container button {
-    border: none; /* Loại bỏ viền của nút */
-    padding: 0; /* Loại bỏ padding của nút */
-}
-
-.container .section {
-    width: 300px; /* Đặt chiều rộng cố định cho mỗi section */
-    height: 300px; /* Đặt chiều cao cố định cho mỗi section */
-    display: flex; /* Sử dụng flexbox để căn chỉnh nội dung */
-    flex-direction: column; /* Sắp xếp nội dung theo cột */
-    align-items: center; /* Căn giữa nội dung theo chiều ngang */
-    justify-content: center; /* Căn giữa nội dung theo chiều dọc */
-    text-align: center; /* Căn giữa văn bản */
-    background-color: rgba(180, 88, 169, 0.125); /* Màu nền cho mỗi section */
-    border-radius: 10px; /* Làm tròn các góc */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng đổ */
-    transition: transform 0.3s ease; /* Hiệu ứng chuyển đổi kích thước khi di chuột qua */
-    
-}
-
-.container .section:hover {
-    transform: scale(1.05); 
-}
-
-.container .section img {
-    width: 200px;
-    height: 200px; 
-    border-radius: 10px; 
-    max-width: 200px; /* Đặt chiều rộng tối đa của div là 200px */
-    max-height: 200px; /* Đặt chiều cao tối đa của div là 200px */
-    overflow: hidden;
-}
-
-.container .section h2 {
-    margin-top: 10px; 
-    font-size: 18px; 
-}
-
-.btn-popular{
-    color: #63AB45;
-    background-color: #EFF6EC;
-    padding: 8px 20px;
-    font-size: 18px;
-    outline: none;
-    border: 1px solid #fff;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-.div4 {
-    margin-top: 150px;
-    padding-top: 200px;
-    padding-bottom: 10px;
-    padding-left: 200px;
-    padding-right: 100px;
-    width: 100%;
-    height: auto;
-    background-color: rgba(255, 255, 255, 0.367);
-    flex: 1; /* Mỗi box sẽ chiếm phần bằng nhau của container */
-    margin: 0 10px;
-    text-align: center;
-    font-size: 20px;
-    justify-content: center; /* Căn giữa nội dung theo chiều ngang */
-    align-items: center;
-    vertical-align: middle;
-}
-
-.div5 {
-    margin-top: 150px;
-    padding-top: 400px;
-    padding-bottom: 0px;
-    padding-left: 200px;
-    padding-right: 200px;
-    width: 100%;
-    height: auto;
-    background-color: rgba(255, 255, 255, 0.367);
-    flex: 1; /* Mỗi box sẽ chiếm phần bằng nhau của container */
-    margin: 0 10px;
-    text-align: center;
-    font-size: 20px;
-    justify-content: center; /* Căn giữa nội dung theo chiều ngang */
-    align-items: center;
-    vertical-align: middle;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 25px;
-    font-size: 40px;
-    
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
-    margin-top: 20px;
-}
-
-.grid-item {
-    background-color: #fff;
-    padding-top: 100%; /* Tạo ô vuông */
-    position: relative;
-    border: 1px solid #ddd;
-    overflow: hidden;
-}
-
-.logo img {
-    width: auto;
-    height: auto;
-}
-/*nhap nhay chu*/
-.blink_me {
-    animation: blinker 1s linear infinite;
-}
-
-@keyframes blinker {
-    50% {
-    opacity: 0;
-    }
-}
-/*do bong chu*/
-.blur {
-    text-shadow: rgb(42, 252, 0) -1px -2px 0.5em;
-}
-
-.design {
-    display: none;
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: 1;
-}
 /*style cua phan tieu de san pham*/
 #main-menu {
     display: flex;
@@ -345,22 +98,234 @@ footer {
     color: green;
 }
 
-/*hieu ung anh di chuyen qua lai*/
-.image-container {
-    overflow: hidden; /* Đảm bảo chỉ có phần ảnh hiển thị trong phần tử cha */
-    position: relative; /* Thiết lập vị trí tương đối để di chuyển ảnh */
-  }
-  
-  .image-container img {
-    transition: transform 0.8s ease; /* Tạo hiệu ứng di chuyển mượt mà */
-  }
-  
-  .image-container:hover img {
-    transform: translateX(-20px); /* Di chuyển ảnh sang trái khi di chuột qua */
-  }
+/* Định kiểu cho phần container */
+.container {
+    display: flex; /* Sử dụng flexbox để sắp xếp các phần tử con */
+    justify-content: space-around; /* Sắp xếp đều các phần tử trong container */
+    align-items: center; /* Căn giữa các phần tử theo chiều dọc */
+    gap: 20px; /* Khoảng cách giữa các phần tử con */
+    padding: 20px; /* Khoảng cách giữa container và các phần tử con */
+}
+
+.container button { /* Định kiểu cho các nút trong container */
+    border: none; /* Loại bỏ viền của nút */
+    padding: 0; /* Loại bỏ padding của nút */
+}
+
+.container .section {
+    width: 300px; /* Đặt chiều rộng cố định cho mỗi section */
+    height: 300px; /* Đặt chiều cao cố định cho mỗi section */
+    display: flex; /* Sử dụng flexbox để căn chỉnh nội dung */
+    flex-direction: column; /* Sắp xếp nội dung theo cột */
+    align-items: center; /* Căn giữa nội dung theo chiều ngang */
+    justify-content: center; /* Căn giữa nội dung theo chiều dọc */
+    text-align: center; /* Căn giữa văn bản */
+    background-color: rgba(180, 88, 169, 0.125); /* Màu nền cho mỗi section */
+    border-radius: 10px; /* Làm tròn các góc */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng đổ */
+    transition: transform 0.3s ease; /* Hiệu ứng chuyển đổi kích thước khi di chuột qua */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 25px;
+    font-size: 40px;
+    
+}
+
+.container .section:hover {
+    transform: scale(1.05); 
+}
+
+.container .section img {
+    width: 200px;
+    height: 200px; 
+    border-radius: 10px; 
+    max-width: 200px; /* Đặt chiều rộng tối đa của div là 200px */
+    max-height: 200px; /* Đặt chiều cao tối đa của div là 200px */
+    overflow: hidden;
+}
+
+.container .section h2 {
+    margin-top: 10px; 
+    font-size: 18px; 
+}
+
+.logo img {
+    width: auto;
+    height: auto;
+}
+
+/*FOOTERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR*/
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.div1, .div2, .div3 {
+    text-align: left;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.div6 {
+    text-align: left; 
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+
+/*.grid-item {
+    background-color: #fff;
+    padding-top: 100%;
+    position: relative;
+    border: 1px solid #ddd;
+    overflow: hidden;
+}
+
+.grid-item:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.close {
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header-center p{
+    margin: 0 15px;
+    font-size: 20px;
+}*/
+
+/*SAU HEADERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR*/
+.banner { 
+    width: 100%;
+    height: 500px;
+    background-image: url('images/biahoa.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    color: white; 
+    font-size: 24px; 
+    text-align: center; 
+}
+
+.content{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 100px;
+}
+
+/*nhap nhay chu*/
+.blink_me {
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+    opacity: 0;
+    }
+}
+
+/*do bong chu*/
+.blur {
+    text-shadow: rgb(42, 252, 0) -1px -2px 0.5em;
+}
+
+.design {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+/*nut top chu de hoa mau xanh*/
+.btn-popular{
+    color: #63AB45;
+    background-color: #EFF6EC;
+    padding: 8px 20px;
+    font-size: 18px;
+    outline: none;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/*NOI DUNGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG*/
+.div4 {
+    margin-top: 150px;
+    padding-top: 200px;
+    padding-bottom: 10px;
+    padding-left: 200px;
+    padding-right: 100px;
+    width: 100%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.367);
+    flex: 1; /* Mỗi box sẽ chiếm phần bằng nhau của container */
+    margin: 0 10px;
+    text-align: center;
+    font-size: 20px;
+    justify-content: center; /* Căn giữa nội dung theo chiều ngang */
+    align-items: center;
+    vertical-align: middle;
+}
+
+.div5 {
+    padding-top: 300px;
+    padding-bottom: 300px;
+    padding-left: 200px;
+    padding-right: 200px;
+    width: 100%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.367);
+    flex: 1; /* Mỗi box sẽ chiếm phần bằng nhau của container */
+    margin: 0 10px;
+    text-align: center;
+    font-size: 20px;
+    justify-content: center; /* Căn giữa nội dung theo chiều ngang */
+    align-items: center;
+    vertical-align: middle;
+}
 
 /*hieu ung button xem them*/
-  .custom-button {
+.custom-button {
     background-color: white; /* Màu nền ban đầu */
     color: rgb(239, 108, 130); /* Màu chữ ban đầu */
     border: 3px solid rgb(239, 108, 130);
@@ -375,12 +340,42 @@ footer {
     color: white; /* Màu chữ khi di chuột bấm */
   }
 
-/*CSS PHAN LIEN HEEEEEEEEE*/
+/*
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+
+.grid-item {
+    background-color: #fff;
+    padding-top: 100%;
+    position: relative;
+    border: 1px solid #ddd;
+    overflow: hidden;
+}*/
+
+/*hieu ung anh di chuyen qua lai*/
+.image-container {
+    overflow: hidden; /* Đảm bảo chỉ có phần ảnh hiển thị trong phần tử cha */
+    position: relative; /* Thiết lập vị trí tương đối để di chuyển ảnh */
+  }
+  
+  .image-container img {
+    transition: transform 0.8s ease; /* Tạo hiệu ứng di chuyển mượt mà */
+  }
+  
+  .image-container:hover img {
+    transform: translateX(-20px); /* Di chuyển ảnh sang trái khi di chuột qua */
+  }
+
+/*CSS PHAN LIEN HEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE*/
 .bannerlh { 
     padding-top: 100px;
     height: 200px;
     width: 100%; 
-    background-image: url('images/contact.jpg'); 
+    background-image: url('images/bglh.jpg'); 
     background-size: cover;  
     display: flex; 
     justify-content: center; 
@@ -435,7 +430,7 @@ input[type="submit"]:hover {
     background-color: #45a049;
 }
 
-/*CSS PHAN Y NGHIAAAAA*/
+/*CSS PHAN Y NGHIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA*/
 .banneryn { 
     padding-top: 100px;
     height: 200px;
