@@ -1,16 +1,15 @@
-body {
-    font-family: lato;
+*{
     padding: 0;
     margin: 0;
 }
-
 header {
     background-color: #eed1e3;
     color: #000000;
     width: 100%;
     height: 100px;  
     position: fixed;
-    z-index: 1;   
+    z-index: 1;
+    
 }
 
 .header-content {
@@ -25,44 +24,28 @@ nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    justify-content: center;
 }
 
 nav ul li {
-    margin: 0 15px;
+    display: inline;
+    margin-right: 20px;
 }
 
 nav ul li a {
-    color: black;
     text-decoration: none;
-    font-weight: bold;
+    color: #fff;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
+.contact-info p {
+    margin: 5px 0;
+    font-size: 14px;
 }
 
-/*footer*/
 footer {
     background-color: #333;
-    color: white;
+    color: #fff;
     text-align: center;
-    box-sizing: border-box;
-}
-
-.div1, .div2, .div3 {
-    text-align: left;
-    width: 100%;
-    height: 100%;
-    vertical-align: middle;
-}
-
-.div6 {
-    text-align: left; 
-    width: 100%;
-    height: 100%;
-    background-color: white;
+    padding: 20px 0;
 }
 
 .grid-container {
@@ -139,6 +122,22 @@ footer {
     text-align: center; 
 }
 
+.banneryn { 
+    max-height: 300px;
+    height: 200px;
+    width: 100%; 
+    background-image: url('images/bgyn'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    color: white; 
+    font-size: 10px; 
+    text-align: center; 
+    opacity: 0.6;
+}
+
 .content{
     display: flex; 
     flex-direction: column;
@@ -153,12 +152,15 @@ footer {
     align-items: center; /* Căn giữa các phần tử theo chiều dọc */
     gap: 20px; /* Khoảng cách giữa các phần tử con */
     padding: 20px; /* Khoảng cách giữa container và các phần tử con */
+    
 }
 
 /* Định kiểu cho các nút trong container */
 .container button {
     border: none; /* Loại bỏ viền của nút */
     padding: 0; /* Loại bỏ padding của nút */
+    color:#289105;
+
 }
 
 .container .section {
@@ -176,9 +178,11 @@ footer {
     
 }
 
+
 .container .section:hover {
     transform: scale(1.05); 
 }
+
 
 .container .section img {
     width: 200px;
@@ -189,9 +193,16 @@ footer {
     overflow: hidden;
 }
 
+
 .container .section h2 {
     margin-top: 10px; 
     font-size: 18px; 
+}
+
+* {
+    padding: 0;
+    margin: 0;
+
 }
 
 .btn-popular{
@@ -203,6 +214,16 @@ footer {
     border: 1px solid #fff;
     border-radius: 10px;
     margin-bottom: 20px;
+}
+
+.div1, .div2, .div3 {
+    margin-top: 150px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 180px;
+    width: 100%;
+    height: auto;
+    background-color: rgba(255, 189, 127, .4);
 }
 
 .div4 {
@@ -268,7 +289,6 @@ footer {
     width: auto;
     height: auto;
 }
-/*nhap nhay chu*/
 .blink_me {
     animation: blinker 1s linear infinite;
 }
@@ -278,72 +298,64 @@ footer {
     opacity: 0;
     }
 }
-/*do bong chu*/
-.blur {
-    text-shadow: rgb(42, 252, 0) -1px -2px 0.5em;
-}
 
-.design {
-    display: none;
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: 1;
+.blur {
+        font-size: 40px;
+        text-shadow: rgb(42, 252, 0) -1px -2px 0.5em;
+    }
+    .design{
+display: none;
+position: absolute;
+background-color: rgba(0, 0, 0, 0.7);
+z-index: 1;
 }
 /*style cua phan tieu de san pham*/
-#main-menu {
-    display: flex;
-    list-style: none;
+#main-menu{
+display: flex;
+list-style: none;
 
 }
 
 #main-menu li{
-    position: relative;
+position: relative;
+
+}
+#main-menu li a{
+color: #000000;
+display: block;
+padding: 18px 20px;
+text-decoration: none;
+font-size: 20px;
+
+
+}
+#main-menu ul.sub-menu{
+position: absolute;
+background-color: #deb0dc;
+padding: 15px 0px;
+list-style: none;
+width: 150px;
+border: 1px solid #deb0dc;
+display: none;
+
+}
+#main-menu li:hover>ul.sub-menu{
+display: block;
 }
 
-#main-menu li a {
-    color: #000000;
-    display: block;
-    padding: 18px 20px;
-    text-decoration: none;
-    font-size: 20px;
+#main-menu ul.sub-menu a{
+padding: 1px 1px;
+border-bottom: 1px solid #0c7303;
 }
-
-#main-menu li a:hover {
-    color: #008000; /* Màu xanh lá */
-    text-decoration: underline; /* Gạch chân */
+#main-menu ul.sub-menu li:hover a{
+border-bottom: 5px solid #d77e19; 
 }
-
-#main-menu ul.sub-menu {
-    position: absolute;
-    background-color: #deb0dc;
-    padding: 15px 0px;
-    list-style: none;
-    width: 150px;
-    border: 1px solid #deb0dc;
-    display: none;
+#main-menu ul.sub-menu li:last-child a{
+border: none;
 }
-
-#main-menu li:hover>ul.sub-menu {
-    display: block;
+#main-menu ul li:hover a{
+color: #df2a2a;
 }
-
-#main-menu ul.sub-menu a {
-    padding: 1px 1px;
-    border-bottom: 1px solid #0c7303;
-}
-
-#main-menu ul.sub-menu li:hover a {
-    border-bottom: 5px solid #d77e19; 
-}
-
-#main-menu ul.sub-menu li:last-child a {
-    border: none;
-}
-
-#main-menu ul li:hover a {
-    color: green;
-}
-
 /*hieu ung anh di chuyen qua lai*/
 .image-container {
     overflow: hidden; /* Đảm bảo chỉ có phần ảnh hiển thị trong phần tử cha */
@@ -358,7 +370,6 @@ footer {
     transform: translateX(-20px); /* Di chuyển ảnh sang trái khi di chuột qua */
   }
 
-/*hieu ung button xem them*/
   .custom-button {
     background-color: white; /* Màu nền ban đầu */
     color: rgb(239, 108, 130); /* Màu chữ ban đầu */
@@ -374,105 +385,4 @@ footer {
     color: white; /* Màu chữ khi di chuột bấm */
   }
 
-/*CSS PHAN LIEN HEEEEEEEEE*/
-.bannerlh { 
-    padding-top: 100px;
-    height: 200px;
-    width: 100%; 
-    background-image: url('images/contact.jpg'); 
-    background-size: cover;  
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    color: rgb(0, 0, 0); 
-    font-size: 10px; 
-    text-align: center; 
-    opacity: 0.5;
-    
-}
-
-.container-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 500px;
-    padding-bottom: 200px;
-}   
- 
-form {   
-    width: 50%;
-}
-
-label {
-    display: block;
-    margin-bottom: 10px;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-
-input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 15px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-input[type="submit"]:hover {
-    background-color: #45a049;
-}
-
-/*CSS PHAN Y NGHIAAAAA*/
-.banneryn { 
-    padding-top: 100px;
-    height: 200px;
-    width: 100%; 
-    background-image: url('images/bgyn'); 
-    background-size: cover;  
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    color: rgb(255, 255, 255); 
-    font-size: 10px; 
-    text-align: center; 
-    opacity: 0.7;
-}
-
-.container-yn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60vh; /* Đảm bảo chiều cao của container đủ lớn để căn giữa */
-}
-
-.container-yn img {
-    max-width: 100%; /* Đảm bảo ảnh không vượt quá chiều rộng của container */
-    max-height: 100%; /* Đảm bảo ảnh không vượt quá chiều cao của container */
-}
-
-.div7 {
-    justify-content: center;
-    align-items: center;
-    padding-left: 100px;
-    padding-right: 10px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    box-sizing: border-box;
-}
-
-.div7 img {
-    display: block; /* Để ảnh trở thành một khối để có thể căn giữa */
-    margin: 0 auto; /* Căn ảnh vào giữa theo chiều ngang */
-}
+  
