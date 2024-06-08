@@ -3,7 +3,7 @@ body {
     padding: 0;
     margin: 0;
 }
-/*HEADERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR*/
+/*HEADERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR*/
 header {
     background-color: #eed1e3;
     color: #000000;
@@ -47,7 +47,6 @@ nav ul li a:hover {
 #main-menu {
     display: flex;
     list-style: none;
-
 }
 
 #main-menu li{
@@ -96,6 +95,46 @@ nav ul li a:hover {
 
 #main-menu ul li:hover a {
     color: green;
+}
+
+/*SAU HEADERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR*/
+.banner { 
+    width: 100%;
+    height: 500px;
+    background-image: url('images/biahoa.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    color: white; 
+    font-size: 24px; 
+    text-align: center; 
+    padding-top: 80px;
+  
+}
+
+.content {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+
+/*muc sale*/
+.sale {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    padding: 10px; 
+}
+
+.section2 {
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 /* Định kiểu cho phần container */
@@ -154,27 +193,7 @@ nav ul li a:hover {
     height: auto;
 }
 
-/*FOOTERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR*/
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    box-sizing: border-box;
-}
 
-.div1, .div2, .div3 {
-    text-align: left;
-    width: 100%;
-    height: 100%;
-    vertical-align: middle;
-}
-
-.div6 {
-    text-align: left; 
-    width: 100%;
-    height: 100%;
-    background-color: white;
-}
 
 
 /*.grid-item {
@@ -227,30 +246,6 @@ footer {
 .header-center p{
     margin: 0 15px;
     font-size: 20px;
-}*/
-
-/*SAU HEADERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR*/
-.banner { 
-    width: 100%;
-    height: 500px;
-    background-image: url('images/biahoa.jpg'); 
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    display: flex; 
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
-    color: white; 
-    font-size: 24px; 
-    text-align: center; 
-}
-
-.content{
-    display: flex; 
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
-    margin-top: 100px;
 }
 
 /*nhap nhay chu*/
@@ -281,37 +276,16 @@ footer {
     color: #63AB45;
     background-color: #EFF6EC;
     padding: 8px 20px;
-    font-size: 18px;
+    font-size: 30px;
     outline: none;
     border: 1px solid #fff;
-    border-radius: 10px;
+    border-radius: 40px;
     margin-bottom: 20px;
+    margin-top: 5px;
 }
 
 /*NOI DUNGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG*/
-.div4 {
-    margin-top: 150px;
-    padding-top: 200px;
-    padding-bottom: 10px;
-    padding-left: 200px;
-    padding-right: 100px;
-    width: 100%;
-    height: auto;
-    background-color: rgba(255, 255, 255, 0.367);
-    flex: 1; /* Mỗi box sẽ chiếm phần bằng nhau của container */
-    margin: 0 10px;
-    text-align: center;
-    font-size: 20px;
-    justify-content: center; /* Căn giữa nội dung theo chiều ngang */
-    align-items: center;
-    vertical-align: middle;
-}
-
-.div5 {
-    padding-top: 300px;
-    padding-bottom: 300px;
-    padding-left: 200px;
-    padding-right: 200px;
+.div4, .div5  {
     width: 100%;
     height: auto;
     background-color: rgba(255, 255, 255, 0.367);
@@ -360,6 +334,7 @@ footer {
 .image-container {
     overflow: hidden; /* Đảm bảo chỉ có phần ảnh hiển thị trong phần tử cha */
     position: relative; /* Thiết lập vị trí tương đối để di chuyển ảnh */
+    padding-top: 0px;
   }
   
   .image-container img {
@@ -369,6 +344,31 @@ footer {
   .image-container:hover img {
     transform: translateX(-20px); /* Di chuyển ảnh sang trái khi di chuột qua */
   }
+
+/*FOOTERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR*/
+
+footer {
+    margin-top: 50px;
+
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+.div1, .div2, .div3 {
+    margin-left: 130px;
+    text-align: left;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.div6 {
+    text-align:center; 
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
 
 /*CSS PHAN LIEN HEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE*/
 .bannerlh { 
@@ -472,3 +472,82 @@ input[type="submit"]:hover {
     display: block; /* Để ảnh trở thành một khối để có thể căn giữa */
     margin: 0 auto; /* Căn ảnh vào giữa theo chiều ngang */
 }
+
+
+
+.body4 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #36d63e;
+  }
+  
+  .headB4 {
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    height: 200px;
+    color: #0e5e0e;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Tahoma;
+  }
+ 
+  .cenb4 {
+    margin-left: 70px;
+    width: 90%;
+    height: 800px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: absolute;
+    align-items: center;
+    top: 250px;
+    left: 80px;
+  }
+  
+  .item {
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .item .overlay {
+    background-color:#333;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    mix-blend-mode: multiply;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .item:hover .overlay {
+    opacity: 1;
+  }
+
+
+
+  .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  name {
+    text-align: center;
+    margin: 0;
+    font-size: 25px;
+    color: #0e5e0e;
+  }
+  
