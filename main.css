@@ -5,7 +5,6 @@
     position: relative;
     justify-content: space-between;
     margin: auto;
-    /* align-items: center; */
   }
 
   header {
@@ -96,6 +95,7 @@ nav ul li a:hover {
     font-size: 18px; 
 }
 
+
 .logo img {
     width: auto;
     height: auto;
@@ -157,33 +157,10 @@ nav ul li a:hover {
   .body1 {
     height: 700px;
     margin: 0px;
-    background-image: url('hoa_images/bg1.jpg');
+    background-image: url('pictures/background.jpg');
     background-size: cover;
   }
-
-  .contentB1{
-    width: 100%;
-    margin-left: 400px;
-    margin-top: 250px;
-    position: absolute;
-    /* background-color: #008000; */
-    font-size: 70px;
-    font-family: Courier;
-    
-  }
   
-  .contentB1 > div:first-child {
-    text-align: left;
-    width: 100%;
-}
-
-.contentB1 > div:last-child {
-    margin-top: 30px;
-    margin-left: 50px;
-    text-align: right;
-    width: 50%;
-}
-
   .body2 {
     width: 100%;
     height: 150px;
@@ -214,18 +191,8 @@ nav ul li a:hover {
     width: 75%;
     height: 600px;
     background-color: wheat;
-    background-image: url('hoa_images/bg2.jpg');
+    background-image: url('pictures/cenB3.jpg');
     background-size: cover;
-  }
-
-  .contentB3{
-    margin-left: -21%;
-    width: 30%;
-    position: absolute;
-    /* background-color: #008000; */
-    font-size: 30px;
-    font-family: Courier;
-    
   }
   
   .leftB3 {
@@ -235,15 +202,18 @@ nav ul li a:hover {
     position: fixed;
     left: 0;
     top: 0;
-    z-index: 1;
+    z-index: 3;
     display: flex;
     writing-mode: vertical-rl;
     text-orientation: upright;
     justify-content: center;
     align-items: center;
-    font-family: 'Courier New', monospace;
+    font-family: Courier;
     color: #0e5e0e;
-    font-size: 19px;
+  }
+  
+  .leftB3 p {
+    margin: 0;
   }
   
   .bottom_right_b3 {
@@ -260,7 +230,7 @@ nav ul li a:hover {
     height: 100%;
     object-fit: cover;
   }
-  
+
   .body4 {
     height: 900px;
     display: flex;
@@ -371,74 +341,65 @@ nav ul li a:hover {
   }
 
   .body6{
-    margin-top: 50px;
-    background-image: url('hoa_images/bg3.jpg');
+    position: relative;
+}
+
+  .headB6{
+    margin-left: 50px;
+    font-family: 'Courier New', monospace;
+    color: #0e5e0e;
+    font-size: 35px;
+}
+
+  .cen_B6{
+    background-image: url('hoa_images/bg6.jpg');
     background-size: cover;
-    padding-top: 10px;
-  }
-  
-   .cenB6 {
-    margin-left: 110px;
-    width: 90%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 2px; 
-    grid-row-gap: 40px; 
-    /* background-color: #008000; */
-    }
-
-    .body7{
-        position: relative;
-    }
-    
-    .headB7{
-        margin-left: 50px;
-        font-family: 'Courier New', monospace;
-        color: #0e5e0e;
-        font-size: 35px;
-    }
-
-    .cen_B7{
-        background-image: url('hoa_images/bg6.jpg');
-        background-size: cover;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .body8{
-        padding-top: 30px;
-        text-align: center;
-        font-family: 'Brush Script MT', cursive;
-        color: #0e5e0e;
-        font-size: 25px;
-    }
-
-    footer {
-        margin-top: 50px;
-        margin-left: 30px;
-        background-color: #333;
-        color: #fff;
-        text-align: center;
-        padding: 20px 0;
-    }
-    .div1, .div2, .div3 {
-        margin-left: 130px;
-        text-align: left;
-        width: 100%;
-        height: 100%;
-        vertical-align: middle;
-    }
-    
-    .div6 {
-        text-align:center; 
-        width: 100%;
-        height: 100%;
-        background-color: white;
-    }
-    
-
-        
-    
-   
-
+    grid-template-columns: repeat(2, 1fr);
+}
+.image-container {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+  }
+  .image {
+  flex: 0 0 auto; 
+  width: 500px; 
+  height: 100%;
+  /* opacity: 0; */
+  animation: slide 10s infinite ease-in-out;
+}
   
+.image:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.image:nth-child(2) {
+  animation-delay: 5s;
+} 
+
+.image:nth-child(3) {
+  animation-delay: 10s;
+} 
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  50.01% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
