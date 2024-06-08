@@ -1,3 +1,4 @@
+
 body {
     background-image: url(KHCB/background1.jpg);
     background-repeat: no-repeat;
@@ -7,6 +8,8 @@ body {
     animation-name: body;
     animation-duration: 5s;
     animation-iteration-count: infinite;
+    padding: 0;
+    margin: 0;
 }
 @keyframes body{
     0%{background-image: url(KHCB/background1.jpg);}
