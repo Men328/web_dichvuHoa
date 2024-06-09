@@ -1,4 +1,3 @@
-
 body {
     background-image: url(KHCB/background1.jpg);
     background-repeat: no-repeat;
@@ -18,17 +17,20 @@ body {
 }
 /*HEADERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR*/
 header {
-    background-color: #eed1e3;
-    color: #000000;
+    background-color: none;
     width: 100%;
-    height: 100px;  
+    color: white;
+    height: 70px;  
     position: fixed;
     z-index: 1;   
+    border: none;
+    padding: 25px;
+    font-family: Scriptina, "Great Vibes", cursive;
 }
 
 .header-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     position: fixed;
     z-index: 1;
     position: relative;
@@ -47,9 +49,10 @@ nav ul li {
 }
 
 nav ul li a {
-    color: black;
+    color: white;
     text-decoration: none;
     font-weight: bold;
+    padding: 15px 30px;
 }
 
 nav ul li a:hover {
@@ -67,7 +70,7 @@ nav ul li a:hover {
 }
 
 #main-menu li a {
-    color: #000000;
+    color: white;
     display: block;
     padding: 18px 20px;
     text-decoration: none;
@@ -75,17 +78,16 @@ nav ul li a:hover {
 }
 
 #main-menu li a:hover {
-    color: #008000; /* Màu xanh lá */
-    text-decoration: underline; /* Gạch chân */
+    color: #c8a482; 
 }
 
 #main-menu ul.sub-menu {
     position: absolute;
-    background-color: #deb0dc;
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 15px 0px;
     list-style: none;
     width: 150px;
-    border: 1px solid #deb0dc;
+    border: none ;
     display: none;
 }
 
@@ -95,11 +97,11 @@ nav ul li a:hover {
 
 #main-menu ul.sub-menu a {
     padding: 1px 1px;
-    border-bottom: 1px solid #0c7303;
+    border-bottom: none;
 }
 
 #main-menu ul.sub-menu li:hover a {
-    border-bottom: 5px solid #d77e19; 
+    border-bottom: none; 
 }
 
 #main-menu ul.sub-menu li:last-child a {
@@ -107,7 +109,7 @@ nav ul li a:hover {
 }
 
 #main-menu ul li:hover a {
-    color: green;
+    color: #c8a482;
 }
 
 .container-tt {
@@ -121,24 +123,103 @@ nav ul li a:hover {
     width: auto;
     height: auto;
 }
-
-
+.avt{
+    width: 10%;
+    height: 900px;
+    background-color: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', monospace;
+    color: #0e5e0e;
+    font-size: 19px;
+}
+header:hover {
+    background-color: rgba(72, 52, 52, 0.679);;
+    border-radius: 20px;
+}
+.header1{
+    color: white;
+    font-family: Scriptina, "Great Vibes", cursive;
+    font-size: 20px;
+    padding: 5px;
+    height: 650px;
+    text-align: center;
+}
+.title{
+    height: 300px;
+    weight: 100%;
+}
 .name{
     text-align: center;
-    padding-top: 200px;
-    font-size: 50px;
+    padding: 40px;
+    font-size: 70px;
     background: none;
     transition: font-size 2s, color 2s;
     animation-name: name;
-    animation-duration: 4s;
+    animation-duration: 3s;
     animation-direction: alternate;
     text-align: center;
     align-items: center;
+    font-family: 'Bangers', cursive;
+    transition: transform 0.3s ease;
+    text-shadow: 0 0 10px #787474, 0 0 20px #787474, 0 0 30px #787474, 0 0 40px #787474;
 }
 @keyframes name{
-    0%{ font-size: 50px; color: white; }
-    50%{ font-size: 70px; color:#c8a482; }
-    100%{ font-size: 50px; color: white;}
+    0%{ font-size: 50px; }
+    50%{ font-size: 80px; color:#c8a482;}
+    100%{ font-size: 70px;}
+}
+.condolence-bar-container {
+    position: relative;
+    width: 100%;
+    height: 5px; /* Chiều cao của container là 1cm */
+    background-color: transparent;
+    margin-top: 20px;
+  }
+
+  .condolence-bar {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0%; /* Chiều rộng ban đầu là 0% */
+    max-width: 4cm; /* Chiều dài tối đa của đường thẳng là 4cm */
+    height: 100%; /* Chiều cao bằng với chiều cao của container */
+    background-color: #c8a482;
+    animation: bar-grow 2s ease-in-out forwards;
+  }
+
+  @keyframes bar-grow {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%; /* Chiều rộng cuối cùng sẽ là 100% của container */
+    }
+  }
+
+
+.fname{
+    background: none;
+    font-family: 'Parisienne', cursive;
+    color:white;
+    height: auto;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s ease;
+    line-height: 1.8;
+}
+.card:hover .name{
+    transform: translateY(-100%);
+}
+.card:hover .fname{
+    opacity: 1;
 }
 #trungbay{
     background-color: none;
@@ -167,6 +248,39 @@ nav ul li a:hover {
     display: inline-block;
     width: 100%;
     overflow: hidden;
+}
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+.lightbox:target {
+    display: flex;
+}
+.lightbox-content {
+    background-image: url('https://www.shutterstock.com/image-vector/background-cherry-blossoms-full-bloom-600nw-2416856069.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 80%;
+    max-height: 80%;
+    overflow: auto;
+}
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
 }
 .item img{
     max-width: 100%;
@@ -205,6 +319,22 @@ nav ul li a:hover {
         opacity: 0;
     }
 }
+.lightbox-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 80%;
+    max-height: 80%;
+    overflow: auto;
+}
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
 .soluong{
     border-radius: 4px;
     box-sizing: content-box;
@@ -219,7 +349,7 @@ nav ul li a:hover {
 .quantity-control label {
     margin-right: 10px;
 }
-  
+
 .quantity-control input[type="number"] {
     width: 40px;
     padding: 2px;
@@ -246,7 +376,7 @@ nav ul li a:hover {
   transform: translateY(4px);
 }
 .body5{
-    margin-top: 600px;
+    margin-top: 60px;
     padding: 0px;
     background-color: white;
     display: grid;
@@ -265,10 +395,8 @@ nav ul li a:hover {
     justify-content: center; 
     align-items: center; 
 }
-
 footer {
-    margin-top: 50px;
-    margin-left: 30px;
+    margin-top: 0px;
     background-color: #333;
     color: #fff;
     text-align: center;
@@ -281,8 +409,8 @@ footer {
     height: 100%;
     vertical-align: middle;
 }
-
 .div6 {
+    margin-top: 0px;
     text-align:center; 
     width: 100%;
     height: 100%;
