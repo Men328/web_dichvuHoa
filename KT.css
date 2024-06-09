@@ -148,10 +148,10 @@ nav ul li a:hover {
     animation-direction: alternate;
     text-align: center;
     align-items: center;
-    font-family: QuincyCF, Arial, sans-serif;
+    font-family: 'Bangers', cursive;
     text-transform: none;
     transition: transform 0.3s ease;
-    text-shadow: rgba(0, 0, 0, 0.95) 1px 1px 2px, rgba(0, 0, 0, 0.5) 1px 1px 10px;
+    text-shadow: 0 0 10px #787474, 0 0 20px #787474, 0 0 30px #787474, 0 0 40px #787474;
 }
 @keyframes name{
     0%{ font-size: 50px; }
@@ -290,7 +290,7 @@ nav ul li a:hover {
     transition: transform 0.3s ease-in-out;
 }
 .item:hover img{
-    transform: scale(0.9);
+    transform: scale(1.1);
 }
 .item:hover .image-info{
     transform: translateY(-50%) translateX(0);
