@@ -17,7 +17,7 @@ body {
 }
 /*HEADERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR*/
 header {
-    background: linear-gradient(to bottom, rgba(72, 52, 52, 0.679), rgba(218, 133, 133, 0.679));
+    background: linear-gradient(to bottom, rgba(218, 133, 133, 0.679), rgba(89, 61, 61, 0.642));;
     width: 100%;
     color: white;
     height: 70px;  
