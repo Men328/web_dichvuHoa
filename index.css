@@ -306,13 +306,15 @@ nav ul li a:hover {
     width: 100%;
     height: auto;
     background-color: rgba(255, 255, 255, 0.367);
-    flex: 1; /* Mỗi box sẽ chiếm phần bằng nhau của container */
     margin: 0 10px;
     text-align: center;
     font-size: 20px;
     justify-content: center; /* Căn giữa nội dung theo chiều ngang */
     align-items: center;
     vertical-align: middle;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
 }
 
 /*hieu ung button xem them*/
@@ -336,6 +338,8 @@ nav ul li a:hover {
     overflow: hidden; /* Đảm bảo chỉ có phần ảnh hiển thị trong phần tử cha */
     position: relative; /* Thiết lập vị trí tương đối để di chuyển ảnh */
     padding-top: 0px;
+    display: flex;
+    justify-content: center;
 }
   
   .image-container img {
