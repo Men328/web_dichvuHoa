@@ -1,0 +1,392 @@
+body {
+    background-image: url(KHCB/background1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    box-sizing: border-box;
+    animation-name: body;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    padding: 0;
+    margin: 0;
+}
+@keyframes body{
+    0%{background-image: url(KHCB/background1.jpg);}
+    50%{background-image: url(KHCB/background2.jpg); }
+    100%{ background-image: url(KHCB/background3.jpg);}
+}
+/*HEADERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR*/
+header {
+    background: linear-gradient(to bottom, rgba(51, 41, 88, 0.679), rgba(110, 91, 201, 0.679));
+    width: 100%;
+    color: white;
+    height: 70px;  
+    position: fixed;
+    z-index: 1;   
+    border: none;
+    padding-bottom: 30px;
+    font-family: Scriptina, "Great Vibes", cursive;
+    border-radius: 10px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px 30px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/*style cua phan tieu de san pham*/
+#main-menu {
+    display: flex;
+    list-style: none;
+}
+
+#main-menu li{
+    position: relative;
+}
+
+#main-menu li a {
+    color: white;
+    display: block;
+    padding: 18px 20px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#main-menu li a:hover {
+    color: #c8a482; 
+}
+
+#main-menu ul.sub-menu {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px 0px;
+    list-style: none;
+    width: 150px;
+    border: none ;
+    display: none;
+}
+
+#main-menu li:hover>ul.sub-menu {
+    display: block;
+}
+
+#main-menu ul.sub-menu a {
+    padding: 1px 1px;
+    border-bottom: none;
+}
+
+#main-menu ul.sub-menu li:hover a {
+    border-bottom: none; 
+}
+
+#main-menu ul.sub-menu li:last-child a {
+    border: none;
+}
+
+#main-menu ul li:hover a {
+    color: #c8a482;
+}
+
+.container-tt {
+    display: flex; /* Sử dụng flexbox để sắp xếp các phần tử con */
+    justify-content: space-around; /* Sắp xếp đều các phần tử trong container */
+    align-items: center; /* Căn giữa các phần tử theo chiều dọc */
+    padding: 20px; /* Khoảng cách giữa container và các phần tử con */
+}
+
+.logo img {
+    width: auto;
+    height: auto;
+}
+/* khung tiêu đề*/
+.header1{
+    color: white;
+    font-family: Scriptina, "Great Vibes", cursive;
+    font-size: 20px;
+    padding: 5px;
+    height: 700px;
+    text-align: center;
+}
+.title{
+    height: 300px;
+    weight: 100%;
+}
+.name{
+    text-align: center;
+    padding: 40px;
+    font-size: 70px;
+    background: none;
+    transition: font-size 2s, color 2s;
+    animation-name: name;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    text-align: center;
+    align-items: center;
+    font-family: QuincyCF, Arial, sans-serif;
+    text-transform: none;
+    transition: transform 0.3s ease;
+    text-shadow: rgba(0, 0, 0, 0.95) 1px 1px 2px, rgba(0, 0, 0, 0.5) 1px 1px 10px;
+}
+@keyframes name{
+    0%{ font-size: 50px; }
+    50%{ font-size: 80px; color:#c8a482;}
+    100%{ font-size: 70px;}
+}
+/*Hiệu ứng xuất hiện gạch ngang*/
+.condolence-bar-container {
+    position: relative;
+    width: 100%;
+    height: 5px; /* Chiều cao của container là 1cm */
+    background-color: transparent;
+    margin-top: 20px;
+  }
+
+  .condolence-bar {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0%; /* Chiều rộng ban đầu là 0% */
+    max-width: 4cm; /* Chiều dài tối đa của đường thẳng là 4cm */
+    height: 100%; /* Chiều cao bằng với chiều cao của container */
+    background-color: #c8a482;
+    animation: bar-grow 2s ease-in-out forwards;
+  }
+
+  @keyframes bar-grow {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%; /* Chiều rộng cuối cùng sẽ là 100% của container */
+    }
+  }
+
+/*Hiệu ứng xuất hiện dòng chữ sau name*/
+.fname{
+    background: none;
+    font-family: 'Parisienne', cursive;
+    color:white;
+    height: auto;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s ease;
+    line-height: 1.8;
+}
+.card:hover .name{
+    transform: translateY(-100%);
+}
+.card:hover .fname{
+    opacity: 1;
+}
+
+/*main*/
+#trungbay{
+    background-color: none;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    width: 80%;
+    display: flex;
+}
+.container{
+    padding: 100px 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+.item{
+    height: 400px;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+}
+/*xuất hiện hộp lightbox*/
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+.lightbox:target {
+    display: flex;
+}
+.lightbox-content {
+    background-image: url('https://www.shutterstock.com/image-vector/background-cherry-blossoms-full-bloom-600nw-2416856069.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 80%;
+    max-height: 80%;
+    overflow: auto;
+}
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+/*hiệu ứng xuất hiện giá, giỏ hàng ảnh*/
+.item img{
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    object-fit: fill;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+.image-info{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%) translateX(100%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    width: 70%;
+    height: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+.item:hover img{
+    transform: scale(0.9);
+}
+.item:hover .image-info{
+    transform: translateY(-50%) translateX(0);
+}
+/*hiệu ứng nháy giá*/
+.image-info t{
+    font-size: 40px;
+    font-style: italic;
+    text-shadow: rgb(42, 252, 0) -1px -2px 0.5em;
+    animation: blinker 2.5s linear infinite;
+}
+@keyframes blinker{
+    50%{
+        opacity: 0;
+    }
+}
+/*hiệu ứng số lượng hoa*/
+.soluong{
+    border-radius: 4px;
+    box-sizing: content-box;
+    display: inline-block;
+    min-width: 152px;
+    width: auto;
+}
+.quantity-control {
+    display: flex;
+    align-items: center;
+}
+.quantity-control label {
+    margin-right: 10px;
+}
+
+.quantity-control input[type="number"] {
+    width: 40px;
+    padding: 2px;
+    text-align: center;
+}
+.btn-add-to-cart {
+    margin-left: 20px;
+    padding: 10px 20px;
+    background-color: #33FF66;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    overflow:hidden;
+    box-shadow: 0 5px #999;
+}
+.btn-add-to-cart:hover {
+    background-color: green;
+}
+.btn-add-to-cart:active {
+    background-color: #3e8e41;
+  box-shadow: 0 2px #666;
+  transform: translateY(4px);
+}
+/*ngoài lề*/
+.body5{
+    margin-top: 60px;
+    padding: 0px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: rgba(231, 223, 223, 0.953);
+}
+
+.child_B5{
+    margin-left: 20px;
+    padding-left: 40px;
+    border-left: 1px solid  #0e5e0e; 
+    /* font-family: 'Satisfy', cursive; */
+    font-family: 'Brush Script MT', cursive;
+    color: #0e5e0e;
+    font-size: 19px;
+    justify-content: center; 
+    align-items: center; 
+}
+footer {
+    margin-top: 0px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+.div1, .div2, .div3 {
+    margin-left: 130px;
+    text-align: left;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+.div6 {
+    margin-top: 0px;
+    text-align:center; 
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
