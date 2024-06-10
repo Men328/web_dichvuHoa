@@ -135,7 +135,7 @@ nav ul li a:hover {
 }
 .title{
     height: 300px;
-    weight: 100%;
+    width: 100%;
 }
 .name{
     text-align: center;
