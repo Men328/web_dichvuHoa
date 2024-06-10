@@ -97,7 +97,7 @@ nav ul li a:hover {
 }
 
 #main-menu ul.sub-menu a {
-    padding: 1px 1px;
+    padding: 5px 1px;
     border-bottom: none;
 }
 
@@ -212,7 +212,7 @@ nav ul li a:hover {
     animation-direction: alternate;
     text-align: center;
     align-items: center;
-    font-family: 'Bangers', cursive;
+    font-family: 'Cursive', 'Calligraphy', serif;
     transition: transform 0.3s ease;
     text-shadow: 0 0 10px #787474, 0 0 20px #787474, 0 0 30px #787474, 0 0 40px #787474;
 }
@@ -321,6 +321,7 @@ nav ul li a:hover {
     max-width: 80%;
     max-height: 80%;
     overflow: auto;
+    font-family: 'Cursive', 'Calligraphy', serif;
 }
 .close-button {
     position: absolute;
@@ -340,6 +341,7 @@ nav ul li a:hover {
     transition: transform 0.3s ease-in-out;
 }
 .image-info{
+    font-family: 'Cursive', 'Calligraphy', serif;
     position: absolute;
     top: 50%;
     right: 0;
@@ -424,8 +426,7 @@ nav ul li a:hover {
     margin-left: 20px;
     padding-left: 40px;
     border-left: 1px solid  #0e5e0e; 
-    /* font-family: 'Satisfy', cursive; */
-    font-family: 'Brush Script MT', cursive;
+    font-family: font-family: 'Cursive', 'Calligraphy', serif;
     color: #0e5e0e;
     font-size: 19px;
     justify-content: center; 
