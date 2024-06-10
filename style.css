@@ -1,3 +1,8 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
 .main-body {
     display: flex;
     flex-direction: column;
@@ -57,45 +62,6 @@ nav ul li a:hover {
     align-items: center; /* Căn giữa các phần tử theo chiều dọc */
     gap: 20px; /* Khoảng cách giữa các phần tử con */
     padding: 20px; /* Khoảng cách giữa container và các phần tử con */
-}
-
-/* Định kiểu cho các nút trong container */
-.container button {
-    border: none; /* Loại bỏ viền của nút */
-    padding: 0; /* Loại bỏ padding của nút */
-}
-
-.container .section {
-    width: 300px; /* Đặt chiều rộng cố định cho mỗi section */
-    height: 300px; /* Đặt chiều cao cố định cho mỗi section */
-    display: flex; /* Sử dụng flexbox để căn chỉnh nội dung */
-    flex-direction: column; /* Sắp xếp nội dung theo cột */
-    align-items: center; /* Căn giữa nội dung theo chiều ngang */
-    justify-content: center; /* Căn giữa nội dung theo chiều dọc */
-    text-align: center; /* Căn giữa văn bản */
-    background-color: rgba(180, 88, 169, 0.125); /* Màu nền cho mỗi section */
-    border-radius: 10px; /* Làm tròn các góc */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng đổ */
-    transition: transform 0.3s ease; /* Hiệu ứng chuyển đổi kích thước khi di chuột qua */
-    
-}
-
-.container .section:hover {
-    transform: scale(1.05); 
-}
-
-.container .section img {
-    width: 200px;
-    height: 200px; 
-    border-radius: 10px; 
-    max-width: 200px; /* Đặt chiều rộng tối đa của div là 200px */
-    max-height: 200px; /* Đặt chiều cao tối đa của div là 200px */
-    overflow: hidden;
-}
-
-.container .section h2 {
-    margin-top: 10px; 
-    font-size: 18px; 
 }
 
 .logo img {
@@ -533,7 +499,6 @@ nav ul li a:hover {
 
     footer {
         margin-top: 50px;
-        margin-left: 30px;
         background-color: #333;
         color: #fff;
         text-align: center;
