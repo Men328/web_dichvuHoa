@@ -194,61 +194,6 @@ nav ul li a:hover {
     color: #0e5e0e;
     font-size: 19px;
 }
-<<<<<<< HEAD
-
-=======
-/*CSS PHAN LIEN HEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE*/
-.popup {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-#contactPopup {
-    display: none;
-}
-
-.popup-content {
-    background-color: rgb(231, 239, 242);
-    color:#564434;
-    width: 100%;
-    height: 400px;
-    max-width: 800px;
-    margin: 120px auto;
-    padding: 20px;
-    border-radius: 10px;
-    position: relative;
-}
-
-/* nut x de dong */
-.close { 
-    position: absolute;
-    top: 5px;
-    right: 10px;
-    font-size: 30px;
-    cursor: pointer;
-}
-
-.contact-info {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-
-.avatar {
-    text-align: center;
-}
-
-.avatar img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
->>>>>>> 28d2d38da2f4cf08138390f1f2c749ed737729b5
 /* khung tiêu đề*/
 .header1{
     color: white;
@@ -274,11 +219,7 @@ nav ul li a:hover {
     animation-direction: alternate;
     text-align: center;
     align-items: center;
-<<<<<<< HEAD
     font-family: lato;
-=======
-    font-family: 'Cursive', 'Calligraphy', serif;
->>>>>>> 28d2d38da2f4cf08138390f1f2c749ed737729b5
     transition: transform 0.3s ease;
     text-shadow: 0 0 10px #787474, 0 0 20px #787474, 0 0 30px #787474, 0 0 40px #787474;
 }
@@ -514,11 +455,7 @@ nav ul li a:hover {
     margin-left: 20px;
     padding-left: 40px;
     border-left: 1px solid  #0e5e0e; 
-<<<<<<< HEAD
     font-family: lato;
-=======
-    font-family: font-family: 'Cursive', 'Calligraphy', serif;
->>>>>>> 28d2d38da2f4cf08138390f1f2c749ed737729b5
     color: #0e5e0e;
     font-size: 19px;
     justify-content: center; 
