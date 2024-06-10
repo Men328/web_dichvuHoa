@@ -9,12 +9,14 @@ body {
     animation-iteration-count: infinite;
     padding: 0;
     margin: 0;
+    font-family: lato;
 }
 @keyframes body{
     0%{background-image: url(KHCB/background1.jpg);}
     50%{background-image: url(KHCB/background2.jpg); }
     100%{ background-image: url(KHCB/background3.jpg);}
 }
+
 /*HEADERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR*/
 header {
     background: linear-gradient(to bottom, rgba(72, 52, 52, 0.679), rgba(218, 133, 133, 0.679));
@@ -25,7 +27,7 @@ header {
     z-index: 1;   
     border: none;
     padding-bottom: 30px;
-    font-family: Scriptina, "Great Vibes", cursive;
+    font-family: lato;
     border-radius: 10px;
 }
 
@@ -113,6 +115,60 @@ nav ul li a:hover {
     color: #c8a482;
 }
 
+/*CSS PHAN LIEN HEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE*/
+.popup {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#contactPopup {
+    display: none;
+    color:#333;
+}
+
+.popup-content {
+    background-color: rgb(231, 239, 242);
+    width: 100%;
+    height: 400px;
+    max-width: 800px;
+    margin: 120px auto;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+/* nut x de dong */
+.close { 
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.avatar {
+    text-align: center;
+}
+
+.avatar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid #7d1a1a; /* Thêm viền màu xám, bạn có thể điều chỉnh màu sắc tùy ý */
+    padding: 2px; /* Thêm padding 5px */
+}
+
 .container-tt {
     display: flex; /* Sử dụng flexbox để sắp xếp các phần tử con */
     justify-content: space-around; /* Sắp xếp đều các phần tử trong container */
@@ -124,7 +180,7 @@ nav ul li a:hover {
     width: auto;
     height: auto;
 }
-.avt{
+.avt {
     width: 10%;
     height: 900px;
     background-color: none;
@@ -137,23 +193,26 @@ nav ul li a:hover {
     text-orientation: upright;
     justify-content: center;
     align-items: center;
-    font-family: 'Courier New', monospace;
+    font-family: lato;
     color: #0e5e0e;
     font-size: 19px;
 }
+
 /* khung tiêu đề*/
 .header1{
     color: white;
-    font-family: Scriptina, "Great Vibes", cursive;
+    font-family: lato;
     font-size: 20px;
     padding: 5px;
     height: 650px;
     text-align: center;
 }
+
 .title{
     height: 300px;
     width: 100%;
 }
+
 .name{
     text-align: center;
     padding: 40px;
@@ -164,7 +223,7 @@ nav ul li a:hover {
     animation-direction: alternate;
     text-align: center;
     align-items: center;
-    font-family: 'Bangers', cursive;
+    font-family: lato;
     transition: transform 0.3s ease;
     text-shadow: 0 0 10px #787474, 0 0 20px #787474, 0 0 30px #787474, 0 0 40px #787474;
 }
@@ -173,6 +232,7 @@ nav ul li a:hover {
     50%{ font-size: 80px; color:#c8a482;}
     100%{ font-size: 70px;}
 }
+
 /*Hiệu ứng xuất hiện gạch ngang*/
 .condolence-bar-container {
     position: relative;
@@ -205,7 +265,7 @@ nav ul li a:hover {
 /*Hiệu ứng xuất hiện dòng chữ sau name*/
 .fname{
     background: none;
-    font-family: 'Parisienne', cursive;
+    font-family: lato;
     color:white;
     height: auto;
     text-align: center;
@@ -213,12 +273,15 @@ nav ul li a:hover {
     transition: opacity 1s ease;
     line-height: 1.8;
 }
+
 .card:hover .name{
     transform: translateY(-100%);
 }
+
 .card:hover .fname{
     opacity: 1;
 }
+
 /*main*/
 #trungbay{
     background-color: none;
@@ -228,10 +291,12 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
 }
+
 .main{
     width: 80%;
     display: flex;
 }
+
 .container{
     padding: 100px 40px;
     display: grid;
@@ -241,6 +306,7 @@ nav ul li a:hover {
     gap: 30px;
     width: 100%;
 }
+
 .item{
     height: 400px;
     position: relative;
@@ -248,6 +314,7 @@ nav ul li a:hover {
     width: 100%;
     overflow: hidden;
 }
+
 /*xuất hiện hộp lightbox*/
 .lightbox {
     display: none;
@@ -261,9 +328,11 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
 }
+
 .lightbox:target {
     display: flex;
 }
+
 .lightbox-content {
     background-image: url('https://www.shutterstock.com/image-vector/background-cherry-blossoms-full-bloom-600nw-2416856069.jpg');
     background-repeat: no-repeat;
@@ -274,6 +343,7 @@ nav ul li a:hover {
     max-height: 80%;
     overflow: auto;
 }
+
 .close-button {
     position: absolute;
     top: 10px;
@@ -282,6 +352,7 @@ nav ul li a:hover {
     color: white;
     cursor: pointer;
 }
+
 /*hiệu ứng xuất hiện giá, giỏ hàng ảnh*/
 .item img{
     max-width: 100%;
@@ -291,6 +362,7 @@ nav ul li a:hover {
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out;
 }
+
 .image-info{
     position: absolute;
     top: 50%;
@@ -303,12 +375,15 @@ nav ul li a:hover {
     height: 50%;
     transition: transform 0.3s ease-in-out;
 }
+
 .item:hover img{
     transform: scale(0.9);
 }
+
 .item:hover .image-info{
     transform: translateY(-50%) translateX(0);
 }
+
 /*hiệu ứng nháy giá*/
 .image-info t{
     font-size: 40px;
@@ -321,6 +396,7 @@ nav ul li a:hover {
         opacity: 0;
     }
 }
+
 /*hiệu ứng số lượng hoa*/
 .soluong{
     border-radius: 4px;
@@ -329,6 +405,7 @@ nav ul li a:hover {
     min-width: 152px;
     width: auto;
 }
+
 .quantity-control {
     display: flex;
     align-items: center;
@@ -342,6 +419,7 @@ nav ul li a:hover {
     padding: 2px;
     text-align: center;
 }
+
 .btn-add-to-cart {
     margin-left: 20px;
     padding: 10px 20px;
@@ -354,16 +432,19 @@ nav ul li a:hover {
     overflow:hidden;
     box-shadow: 0 5px #999;
 }
+
 .btn-add-to-cart:hover {
     background-color: green;
 }
+
 .btn-add-to-cart:active {
     background-color: #3e8e41;
   box-shadow: 0 2px #666;
   transform: translateY(4px);
 }
+
 /*ngoài lề*/
-.body5{
+.body5 {
     margin-top: 60px;
     padding: 0px;
     background-color: white;
@@ -372,12 +453,11 @@ nav ul li a:hover {
     background-color: rgba(231, 223, 223, 0.953);
 }
 
-.child_B5{
+.child_B5 {
     margin-left: 20px;
     padding-left: 40px;
     border-left: 1px solid  #0e5e0e; 
-    /* font-family: 'Satisfy', cursive; */
-    font-family: 'Brush Script MT', cursive;
+    font-family: lato;
     color: #0e5e0e;
     font-size: 19px;
     justify-content: center; 
@@ -390,6 +470,7 @@ footer {
     text-align: center;
     padding: 20px 0;
 }
+
 .div1, .div2, .div3 {
     margin-left: 130px;
     text-align: left;
@@ -397,10 +478,11 @@ footer {
     height: 100%;
     vertical-align: middle;
 }
-.div6 {
-    margin-top: 0px;
+
+.div4 {
     text-align:center; 
     width: 100%;
     height: 100%;
     background-color: white;
+    padding: 0.5px;
 }
