@@ -109,8 +109,6 @@ nav ul li a:hover {
   height: auto;
 }
 
-
-
 .main-body {
     display: flex;
     flex-direction: column;
@@ -269,6 +267,59 @@ nav ul li a:hover {
     color: green;
 }
 
+  
+.popup {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#contactPopup {
+  display: none;
+}
+
+.popup-content {
+  background-color: rgb(231, 239, 242);
+  width: 100%;
+  height: 400px;
+  max-width: 800px;
+  margin: 120px auto;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+}
+
+/* nut x de dong */
+.close { 
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.avatar {
+  margin-left: 5%;
+  display: inline-block; /* Đảm bảo chiều rộng của div chỉ bằng chiều rộng của ảnh */
+}
+
+.avatar img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #7d1a1a; /* Thêm viền màu xám, bạn có thể điều chỉnh màu sắc tùy ý */
+  /* padding: 2px;  */
+}
+
 .body1 {
   height: 700px;
   margin: 0px;
@@ -391,10 +442,10 @@ nav ul li a:hover {
   top: 300px;
   background-image: url('pictures/1.jpg');
   background-size: cover;
-  animation: nen 20s infinite linear;
+  animation: face 20s infinite linear;
 }
 
-@keyframes nen {
+@keyframes face {
   0% {
       background-image: url('pictures/4.jpg');
    }
@@ -571,22 +622,89 @@ name a {
     align-items: center; 
   }
 
-  .body6{
-    position: relative;
+.body6 {
+  height: 1100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* top: 30px; */
+  background-image: url('pictures/4.jpg');
+  background-size: cover;
+  animation: nen 20s infinite linear;
 }
 
-  .headB6{
-    margin-left: 50px;
-    font-family: 'Courier New', monospace;
-    color: #0e5e0e;
-    font-size: 35px;
+@keyframes nen {
+  0% {
+      background-image: url('pictures/4.jpg');
+   }
+  25% {
+      background-image: url('hoa_images/bg14.jpg');
+  } 
+  50% {
+      background-image: url('hoa_images/bg15');
+  }
+  75% {
+      background-image: url('hoa_images/bg16.jpg');
+  }
+  100% {
+      background-image: url('hoa_images/bg8.jpg');
+  }
 }
 
-  .cen_B6{
-    background-image: url('hoa_images/bg6.jpg');
-    background-size: cover;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+.headB6 {
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  height: 200px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Tahoma;
+}
+
+.cenb6 {
+  margin-left: 70px;
+  width: 90%;
+  height: 800px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: absolute;
+  align-items: center;
+  top: 200px;
+  left: 80px;
+}
+
+.body7{
+  position: relative;
+  margin-top: 90px;
+  background-image: url('pictures/tim5.png');
+  background-size: cover;
+}
+
+.headB7{
+  margin-left: 80px;
+  font-family: 'Courier New', monospace;
+  font-size: 35px;
+  font-weight: bolder;
+}
+
+.cen_B7{
+  /* background-image: url('hoa_images/bg6.jpg');
+  background-size: cover; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* position: fixed; */
+}
+
+.body8{
+  padding-top: 30px;
+  text-align: center;
+  font-family: 'Courier New', monospace;
+  color: #0e5e0e;
+  font-size: 25px;
+  font-weight: bolder;
 }
 
 footer {

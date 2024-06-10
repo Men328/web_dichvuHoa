@@ -12,7 +12,7 @@ body {
     margin: auto;
     /* align-items: center; */
   }
-
+  
   header {
     /* background-color: #eed1e3; */
     background-image: url('hoa_images/bg7.png');
@@ -118,6 +118,7 @@ nav ul li a:hover {
 #main-menu ul li:hover a {
     color: green;
 }
+
   .body1 {
     height: 700px;
     margin: 0px;
@@ -475,7 +476,7 @@ nav ul li a:hover {
     }
     
     .headB7{
-        margin-left: 50px;
+        margin-left: 80px;
         font-family: 'Courier New', monospace;
         color: #0e5e0e;
         font-size: 35px;
@@ -492,7 +493,7 @@ nav ul li a:hover {
     .body8{
         padding-top: 30px;
         text-align: center;
-        font-family: 'Brush Script MT', cursive;
+        font-family: 'Courier New', monospace;
         color: #0e5e0e;
         font-size: 25px;
     }
