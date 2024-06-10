@@ -301,8 +301,8 @@ nav ul li a:hover {
 
 /*Hiệu ứng xuất hiện dòng chữ sau name*/
 .fname {
+    font-family: Scriptina, "Great Vibes", cursive;
     background: none;
-    font-family: Lato;
     color:white;
     height: auto;
     text-align: center;
