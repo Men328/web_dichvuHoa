@@ -79,7 +79,7 @@ nav ul li a:hover {
     background-color: #deb0dc;
     padding: 15px 0px;
     list-style: none;
-    width: 150px;
+    width: 210px;
     border: 1px solid #deb0dc;
     display: none;
 }
@@ -89,7 +89,7 @@ nav ul li a:hover {
 }
 
 #main-menu ul.sub-menu a {
-    padding: 1px 1px;
+    padding: 2px 2px;
     border-bottom: 1px solid #0c7303;
 }
 
